@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		921187BA20CFF4AB00B6C767 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921187B920CFF4AB00B6C767 /* AppDelegate.swift */; };
-		921187BC20CFF4AC00B6C767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921187BB20CFF4AC00B6C767 /* ViewController.swift */; };
 		921187BF20CFF4AC00B6C767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921187BD20CFF4AC00B6C767 /* Main.storyboard */; };
 		921187C120CFF4AD00B6C767 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921187C020CFF4AD00B6C767 /* Assets.xcassets */; };
 		921187C420CFF4AD00B6C767 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921187C220CFF4AD00B6C767 /* LaunchScreen.storyboard */; };
 		921187CF20CFF4AD00B6C767 /* changeAppLanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921187CE20CFF4AD00B6C767 /* changeAppLanguageTests.swift */; };
 		921187DA20CFF4AD00B6C767 /* changeAppLanguageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921187D920CFF4AD00B6C767 /* changeAppLanguageUITests.swift */; };
+		921187EA20CFF87F00B6C767 /* ManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 921187E920CFF87F00B6C767 /* ManagerModel.m */; };
+		921187EC20CFF9FE00B6C767 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921187EB20CFF9FE00B6C767 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		921187B620CFF4AB00B6C767 /* changeAppLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = changeAppLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921187B920CFF4AB00B6C767 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		921187BB20CFF4AC00B6C767 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		921187BE20CFF4AC00B6C767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		921187C020CFF4AD00B6C767 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		921187C320CFF4AD00B6C767 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,10 @@
 		921187D520CFF4AD00B6C767 /* changeAppLanguageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = changeAppLanguageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921187D920CFF4AD00B6C767 /* changeAppLanguageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeAppLanguageUITests.swift; sourceTree = "<group>"; };
 		921187DB20CFF4AD00B6C767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921187E720CFF87F00B6C767 /* changeAppLanguage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "changeAppLanguage-Bridging-Header.h"; sourceTree = "<group>"; };
+		921187E820CFF87F00B6C767 /* ManagerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerModel.h; sourceTree = "<group>"; };
+		921187E920CFF87F00B6C767 /* ManagerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerModel.m; sourceTree = "<group>"; };
+		921187EB20CFF9FE00B6C767 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,14 @@
 			isa = PBXGroup;
 			children = (
 				921187B920CFF4AB00B6C767 /* AppDelegate.swift */,
-				921187BB20CFF4AC00B6C767 /* ViewController.swift */,
+				921187EB20CFF9FE00B6C767 /* LoginViewController.swift */,
+				921187E820CFF87F00B6C767 /* ManagerModel.h */,
+				921187E920CFF87F00B6C767 /* ManagerModel.m */,
 				921187BD20CFF4AC00B6C767 /* Main.storyboard */,
 				921187C020CFF4AD00B6C767 /* Assets.xcassets */,
 				921187C220CFF4AD00B6C767 /* LaunchScreen.storyboard */,
 				921187C520CFF4AD00B6C767 /* Info.plist */,
+				921187E720CFF87F00B6C767 /* changeAppLanguage-Bridging-Header.h */,
 			);
 			path = changeAppLanguage;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					921187B520CFF4AB00B6C767 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					921187C920CFF4AD00B6C767 = {
 						CreatedOnToolsVersion = 9.4;
@@ -256,7 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921187BC20CFF4AC00B6C767 /* ViewController.swift in Sources */,
+				921187EC20CFF9FE00B6C767 /* LoginViewController.swift in Sources */,
+				921187EA20CFF87F00B6C767 /* ManagerModel.m in Sources */,
 				921187BA20CFF4AB00B6C767 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7AM928UT8;
 				INFOPLIST_FILE = changeAppLanguage/Info.plist;
@@ -439,6 +449,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.netvox.changeAppLanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "changeAppLanguage/changeAppLanguage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7AM928UT8;
 				INFOPLIST_FILE = changeAppLanguage/Info.plist;
@@ -457,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.netvox.changeAppLanguage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "changeAppLanguage/changeAppLanguage-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
